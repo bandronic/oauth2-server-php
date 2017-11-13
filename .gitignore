@@ -1,5 +1,8 @@
-# Test Files #
-test/config/test.sqlite
-vendor
-composer.lock
 .idea
+composer.phar
+
+clover.xml
+coveralls-upload.json
+phpunit.xml
+vendor/
+.vscode/

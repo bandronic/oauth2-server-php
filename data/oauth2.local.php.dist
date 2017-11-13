@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'oauth2' => [
+        'db' => [
+            'dsn'      => '', // For example "mysql:dbname=oauth2_db;host=localhost"
+            'username' => '', // Database username
+            'password' => '', // Database password
+        ],
+        'allow_implicit'    => true, // Default (set to true when you need to support browser-based or mobile apps)
+        'access_lifetime'   => 3600, // Default (set a value in seconds for access tokens lifetime)
+        'enforce_state'     => true,  // Default
+        'always_issue_new_refresh_token' => true, // Set to true in order to receive a refresh token always
+        'keys_folder' => './config/keys', // Public and private keys folder location
+        'user_entity'       => '', // MANDATORY user entity, must implement UserInterface
+        'client_service'       => '', // OPTIONAL client service, must implement ClientInterface
+    ],
+];

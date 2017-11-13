@@ -1,34 +1,30 @@
 {
-    "name": "bshaffer/oauth2-server-php",
-    "description":"OAuth2 Server for PHP",
-    "keywords":["oauth","oauth2","auth"],
-    "type":"library",
-    "license":"MIT",
-    "authors":[
-        {
-            "name":"Brent Shaffer",
-            "email": "bshafs@gmail.com",
-            "homepage":"http://brentertainment.com"
-        }
-    ],
-    "homepage": "http://github.com/bshaffer/oauth2-server-php",
-    "autoload": {
-        "psr-0": { "OAuth2": "src/" }
-    },
-    "require":{
-        "php":">=5.3.9"
-    },
-    "require-dev": {
-        "aws/aws-sdk-php": "~2.8",
-        "firebase/php-jwt": "~2.2",
-        "predis/predis": "dev-master",
-        "thobbs/phpcassa": "dev-master",
-        "mongodb/mongodb": "^1.1"
-    },
-    "suggest": {
-        "predis/predis": "Required to use Redis storage",
-        "thobbs/phpcassa": "Required to use Cassandra storage",
-        "aws/aws-sdk-php": "~2.8 is required to use DynamoDB storage",
-        "firebase/php-jwt": "~1.1 is required to use MondoDB storage"
+  "name": "bandronic/OAuth2Server",
+  "description": "OAuth2 server based on BShaffer OAuth2, utilizing Doctrine",
+  "minimum-stability": "stable",
+  "keywords":["oauth","oauth2","auth","doctrine"],
+  "type":"library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bogdan A.",
+      "email": "bandronic@gmail.com"
     }
+  ],
+  "require":{
+    "php": "^5.6 || ^7.0",
+    "bshaffer/oauth2-server-php": "~1.8",
+    "dasprid/container-interop-doctrine": "1.0.0",
+    "robmorgan/phinx": "^0.9.1",
+    "symfony/http-foundation": "^3.3",
+    "zendframework/zend-config-aggregator": "^1.0",
+    "zendframework/zend-expressive": "^2.0.2",
+    "zendframework/zend-servicemanager": "^3.3",
+    "http-interop/http-server-handler": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OAuth2Server\\": "src/"
+    }
+  }
 }
