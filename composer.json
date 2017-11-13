@@ -1,5 +1,5 @@
 {
-  "name": "bandronic/OAuth2Server",
+  "name": "bandronic/oauth2server",
   "description": "OAuth2 server based on BShaffer OAuth2, utilizing Doctrine",
   "minimum-stability": "stable",
   "keywords":["oauth","oauth2","auth","doctrine"],
