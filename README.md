@@ -2,7 +2,7 @@
 
 Implementation of the OAuth2 server using Doctrine ORM. 
 
-The package forks [BShaffer's OAuth2](bshaffer/oauth2-server-php) implementation and adapts it to use Doctrine, PSR4 and PSR7.
+The package forks [BShaffer's OAuth2](https://github.com/bshaffer/oauth2-server-php) implementation and adapts it to use Doctrine, PSR4 and PSR7.
 
 ## Requirements
 
